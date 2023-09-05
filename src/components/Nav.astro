@@ -20,7 +20,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 
 <nav>
 	<div class="menu-header">
-		<a href="/astro_portfolio/" class="site-title">
+		<a href="/" class="site-title">
 			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
 			Ajeet Sinha
 		</a>
@@ -45,7 +45,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 								{
 									active:
 										Astro.url.pathname === href ||
-										(href !== '/astro_portfolio/' && Astro.url.pathname.startsWith('/astro_portfolio'+href)),
+										(href !== '/' && Astro.url.pathname.startsWith(href)),
 								},
 							]}
 							href={href}
